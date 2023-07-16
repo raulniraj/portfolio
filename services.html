@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+    <title>services</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    
+
+min-height: 100vh;
+background: rgb(0, 0, 33);
+color: white;
+display: flex;
+flex-direction: column;
+}  
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(18, 18, 62);
+  }
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+  nav ul li {
+    list-style: none;
+    margin: 0 23px;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  nav ul li a:hover {
+    color: rgb(153, 153, 226);
+    font-size: 1.01rem;
+  }
+  .left {
+    font-size: 1.5rem;
+  }
+.container{
+    position:relative ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+margin-top: 70px;
+margin-bottom: 50px;
+gap: 60px ;
+}
+.container .box{
+    position: relative;
+    width: 300px;
+    height: 520px;
+    background: #2e2e2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .box::before{
+    content: '';
+    position: absolute;
+    inset: 10px 50px;
+    border-top: 4px solid var(--clr);
+    border-bottom: 4px solid var(--clr);
+    z-index: -1;
+    transform: skewY(15deg);
+    transition: 0.5s ease-in-out;
+}
+.container .box:hover::before{
+    transform: skewY(0deg);
+    inset: 10px 40px;
+}
+.container .box::after{
+    content: '';
+    position: absolute;
+    inset: 60px -10px;
+    border-left: 4px solid var(--clr);
+    border-right: 4px solid var(--clr);
+    z-index: -1;
+    transform: skewY(15deg);
+    transition: 0.5s ease-in-out;
+}
+.container .box:hover::after{
+    transform: skewY(0deg);
+    inset: 40px -10px;
+}
+.container .box .content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap:20px;
+    padding: 0 20px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.container .box .content .icon{
+    color: var(--clr);
+    width: 80px;
+    height: 80px;
+    box-shadow: 0 0 0 4px #2e2e2e, 0 0 0 6px var(--clr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    background: #2e2e2e;
+    transition: 0.5s ease-in-out;
+}
+.container .box:hover .content .icon{
+    background: var(--clr);
+    color: #2e2e2e;
+    box-shadow: 0 0 0 4px #2e2e2e, 0 0 0 500px var(--clr);
+}
+.container .box .content .text h3{
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.5s ease-in-out;
+}
+.container .box:hover .content .text h3{
+    color: #2e2e2e;
+}
+.container .box .content .text p{
+    color: #999;
+    transition: 0.5s ease-in-out;
+}
+.container .box:hover .content .text p{
+color: #2e2e2e;
+}
+.container .box .content .text a{
+    position: relative;
+    background: var(--clr);
+    color: #2e2e2e;
+    padding: 8px 15px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 10px;
+    transition: 0.5s ease-in-out;
+}
+.container .box:hover .content .text a{
+    background: #2e2e2e;
+    color: var(--clr);
+}
+footer {
+    background-color: #0b0a0b;
+    margin-top: auto;
+  }
+  .footer {
+    display: flex;
+    margin-top: 50px;
+    padding: 40px 122px;
+    justify-content: space-evenly;
+  }
+  .footer ul {
+    list-style: none;
+    
+  }
+  .footer ul a{
+    text-decoration: none;
+    color: white;
+  }
+  .footer > div {
+    width: 223px;
+  }
+  footer .footer-rights {
+    text-align: center;
+    color: gray;
+    padding: 12px 0;
+  }
+  .image-bottom {
+    width: 40px;
+    display: inline-flex;
+    margin-left: 1%;
+    border-radius: 6px;
+  }
+  .image-bottom1{
+    margin-left: 43%;
+    width: 40px;
+    display: inline-flex;
+   
+  }
+  
+</style>
+  </head>
+  <body>
+    <header>
+    <nav>
+      <div class="left">Services</div>
+      <div class="right">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      <div class="box" style="--clr:#89ec5b;">
+        <div class="content">
+          <div class="icon"><ion-icon name="brush-outline"></ion-icon></div>
+          <div class="text">
+            <h3>Designing</h3>
+            <p>
+              Web and software design involve developing visually appealing websites and applications. Designing for website templates requires attention to layout, typography, color schemes, and user experience. By incorporating responsive design techniques, usability principles, and interactive elements, designers create engaging experiences.
+            </p>
+            <a href="projects.html">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="box" style="--clr: #eb5ae5;">
+        <div class="content">
+          <div class="icon"><ion-icon name="code-slash-outline"></ion-icon></div>
+          <div class="text">
+            <h3>Developement</h3>
+            <p>
+              Web and software development involve creating functional websites and applications. In web development, designers build responsive sites using HTML, CSS, and JavaScript for interactive user interfaces. Software development focuses on designing and coding purpose-driven applications with languages like Java, C++, or Python.
+            </p>
+            <a href="projects.html">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="box" style="--clr: #5b98eb;">
+        <div class="content">
+          <div class="icon"><ion-icon name="search-outline"></ion-icon></div>
+          <div class="text">
+            <h3>SEO</h3>
+            <p>
+              SEO improves website visibility and rankings on search engines. Specialists optimize content, keywords, and site structure, conduct research and analysis, and employ on-page and off-page techniques. Technical optimizations like site speed are crucial. Staying informed about search engine algorithms helps drive organic traffic and improve presence.
+            </p>
+            <a href="projects.html">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</main>
+<footer>
+    <div class="footer">
+      <div class="footer-first">
+        <h3>Niraj's Developer Portfolio</h3>
+      </div>
+      <div class="footer-second">
+        <ul>
+            <a href="about.html"><li>About</li></a>
+        </ul>
+      </div>
+
+      <div class="footer-third">
+        <ul>
+            <a href="projects.html"><li>Projects</li></a>
+        </ul>
+      </div>
+      <div class="footer-fourth">
+        <ul>
+            <a href="contact.html"><li>Contact</li></a>
+        </ul>
+      </div>
+
+      <div class="footer-fifth">
+        <ul>
+               <a href="index.html"><li>Home</li></a>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <a href="mailto:raulniraj300@gmail.com"
+        ><img class="image-bottom1" src="images/gmail.png" alt=""
+      /></a>
+      <a href="https://github.com/raulniraj"
+        ><img class="image-bottom" src="images/github.jpg" alt=""
+      /></a>
+      <a href="https://wa.me/9561780676"
+        ><img class="image-bottom" src="images/whatsapp.png" alt=""
+      /></a>
+      <a href="www.linkedin.com/in/nirajraul"
+        ><img class="image-bottom" src="images/linkedin.png" alt=""
+      /></a>
+    </div>
+    <div class="footer-rights">
+      Copyright &#169; www.nirajsportfolio.com | All rights reserved
+    </div>
+  </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Niraj - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(18, 18, 62);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(153, 153, 226);
+        font-size: 1.01rem;
+      }
+      main hr {
+        background: #9c97f1;
+        border: 0;
+        height: 1.4px;
+        margin: 60px 84px;
+      }
+      .left {
+        font-size: 1.5rem;
+      }
+      .firstSection {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 120px 0;
+      }
+      .firstSection > div {
+        width: 35%;
+      }
+      .leftSection {
+        font-size: 3rem;
+      }
+      .leftSection .buttons {
+        padding: 50px 0;
+      }
+      .leftSection .btn {
+        padding: 12px;
+        background: #1e2167;
+        border: 2px solid white;
+        border-radius: 6px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .leftSection .btn a {
+        text-decoration: none;
+        color: white;
+      }
+      .rightSection img {
+        width: 80%;
+      }
+      .purple {
+        color: rgb(149, 77, 218);
+      }
+      .text-gray {
+        color: gray;
+      }
+      #element {
+        color: rgb(149, 77, 218);
+      }
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+      .secondSection h1 {
+        font-size: 1.9rem;
+      }
+      .secondSection .box {
+        background: white;
+        width: 77vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+      }
+      .secondSection .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 6vw;
+      }
+      .image-top {
+        width: 40px;
+        position: relative;
+        top: -50px;
+        left: -20px;
+      }
+      .vertical-title {
+        position: relative;
+        top: 75px;
+        width: 150px;
+        font-size: 16px;
+      }
+      .vertical-desc {
+        position: relative;
+        top: 86px;
+        color: gray;
+        width: 150px;
+        font-size: 11px;
+      }
+      footer {
+        background-color: #0b0a0b;
+      }
+      .footer {
+        display: flex;
+        padding: 40px 122px;
+        justify-content: space-evenly;
+      }
+      .footer ul {
+        list-style: none;
+      }
+      .footer ul a {
+        text-decoration: none;
+        color: white;
+      }
+      .footer > div {
+        width: 223px;
+      }
+      footer .footer-rights {
+        text-align: center;
+        color: gray;
+        padding: 12px 0;
+      }
+      .image-bottom {
+        width: 40px;
+        display: inline-flex;
+        margin-left: 1%;
+        border-radius: 6px;
+      }
+      .image-bottom1 {
+        margin-left: 43%;
+        width: 40px;
+        display: inline-flex;
+      }
+      @media screen and (max-width: 1400px) {
+        .box {
+          flex-direction: column;
+        }
+        .secondSection .vertical {
+          height: unset;
+        }
+        .vertical-title,
+        .vertical-desc {
+          left: 45px;
+        }
+        .secondSection .box {
+          width: 50vw;
+        }
+        nav {
+          flex-direction: column;
+        }
+        .firstSection {
+          flex-direction: column-reverse;
+        }
+        .leftSection {
+          width: 100% !important;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .rightSection {
+          width: 721px !important;
+          display: flex;
+          justify-content: center;
+        }
+        .rightSection img {
+          width: 45vw;
+          margin-bottom: 73px;
+        }
+        .secondSection {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          height: 141vh;
+        }
+        body {
+          min-width: fit-content;
+        }
+        .image-top {
+          top: 133px;
+        }
+        .footer {
+          margin-top: 870px;
+        }
+      }
+      @media screen and (min-width: 320px) and (max-width: 480px) {
+        .box {
+          flex-direction: column;
+        }
+        .secondSection .vertical {
+          height: unset;
+        }
+        .vertical-title,
+        .vertical-desc {
+          left: 45px;
+        }
+        .secondSection .box {
+          width: 50vw;
+        }
+        nav {
+          flex-direction: column;
+        }
+        .firstSection {
+          flex-direction: column-reverse;
+        }
+        .leftSection {
+          width: 100% !important;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .rightSection {
+          width: 721px !important;
+          display: flex;
+          justify-content: center;
+        }
+        .rightSection img {
+          width: 45vw;
+          margin-bottom: 73px;
+        }
+        .secondSection {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          height: 141vh;
+        }
+        body {
+          min-width: min-content;
+        }
+        .image-top {
+          top: 133px;
+        }
+        .footer {
+          margin-top: 600px;
+          font-size: 2.3rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Niraj's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="#">Home</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          <div>Hi, My name is <span class="purple">Niraj</span></div>
+          <div>and I am a<span style="font-size: 40px"> passionate</span></div>
+          <span id="element"></span>
+          <div class="buttons">
+            <button class="btn">
+              <a
+                href="https://drive.google.com/file/d/1ICxQ4ah53B5q8SNFOpSvKBGPSUQofRll/view?usp=drivesdk"
+                >Download Resume</a
+              >
+            </button>
+            <button class="btn">
+              <a href="https://github.com/raulniraj">Visit Github</a>
+            </button>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="images/bg.png" alt="" />
+        </div>
+      </section>
+      <hr />
+      <section class="secondSection">
+        <span class="text-gray">What I have done so far</span>
+        <h1>Project Experience</h1>
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="images/html.png" alt="" />
+            <div class="vertical-title">HTML Website</div>
+            <div class="vertical-desc">
+              In my portfolio website project, I showcased my proficiency in
+              HTML and CSS by creating a visually appealing and responsive
+              design that effectively highlighted my skills and achievements.I
+              implemented various HTML elements and CSS styling techniques to
+              create an intuitive user interface and seamless navigation
+              experience for visitors of my portfolio website.By leveraging my
+              expertise in HTML and CSS, I crafted a modern and professional
+              portfolio website that effectively showcased my work and left a
+              lasting impression on potential clients and employers.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="images/java.png" alt="" />
+            <div class="vertical-title">Java Application</div>
+            <div class="vertical-desc">
+              In my project experience, I have developed a Java application for
+              a to-do list, leveraging the object-oriented programming
+              capabilities of the language to create a user-friendly interface
+              and efficient task management system.The Java application for the
+              to-do list incorporated features such as adding, editing, and
+              deleting tasks, as well as organizing them based on priority or
+              due dates.By utilizing Java's robust libraries and frameworks, I
+              ensured a seamless user experience and enhanced functionality in
+              the to-do list application.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="images/react.png" alt="" />
+            <div class="vertical-title">React Website</div>
+            <div class="vertical-desc">
+              In a recent project, I successfully built a Netflix clone using
+              React, demonstrating my proficiency in frontend development.The
+              Netflix clone project involved implementing key features like user
+              authentication, fetching movie data from an API, and creating a
+              responsive and visually appealing user interface.I leveraged my
+              knowledge of React components, state management, and CSS styling
+              to deliver a high-quality Netflix clone with smooth navigation and
+              an immersive streaming experience.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="images/android.png" alt="" />
+            <div class="vertical-title">Android Application</div>
+            <div class="vertical-desc">
+              In a recent project, I developed a Tic Tac Toe game using Android
+              Studio, showcasing my proficiency in Java and Android
+              development.I implemented intuitive user interface designs,
+              responsive layouts, and smooth game logic for an engaging gameplay
+              experience.Through rigorous testing and iterative development, I
+              ensured the game's stability and optimized performance, delivering
+              a polished and enjoyable Tic Tac Toe game on the Android platform.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="images/android.png" alt="" />
+            <div class="vertical-title">Android Application</div>
+            <div class="vertical-desc">
+              In my project experience with Android Studio, I have developed a
+              fully functional calculator application using Java. I utilized the
+              Android SDK and XML layout files to create an intuitive user
+              interface. The calculator app incorporated various mathematical
+              operations and provided a seamless user experience on different
+              screen sizes and orientations.I implemented advanced features such
+              as history tracking, allowing users to review and recall their
+              previous calculations.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Niraj's Developer Portfolio</h3>
+        </div>
+        <div class="footer-second">
+          <ul>
+            <a href="about.html"><li>About</li></a>
+          </ul>
+        </div>
+
+        <div class="footer-third">
+          <ul>
+            <a href="projects.html"><li>Projects</li></a>
+          </ul>
+        </div>
+        <div class="footer-fourth">
+          <ul>
+            <a href="services.html"><li>Services</li></a>
+          </ul>
+        </div>
+
+        <div class="footer-fifth">
+          <ul>
+            <a href="contact.html"><li>Contact</li></a>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <a href="mailto:raulniraj300@gmail.com"
+          ><img class="image-bottom1" src="images/gmail.png" alt=""
+        /></a>
+        <a href="https://github.com/raulniraj"
+          ><img class="image-bottom" src="images/github.jpg" alt=""
+        /></a>
+        <a href="https://wa.me/9561780676"
+          ><img class="image-bottom" src="images/whatsapp.png" alt=""
+        /></a>
+        <a href="www.linkedin.com/in/nirajraul"
+          ><img class="image-bottom" src="images/linkedin.png" alt=""
+        /></a>
+      </div>
+      <div class="footer-rights">
+        Copyright &#169; www.nirajsportfolio.com | All rights reserved
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Web Developer",
+          "Web Designer",
+          "Android Developer",
+          "System Designer",
+        ],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>

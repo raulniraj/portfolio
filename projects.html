@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+    <title>services</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    
+
+min-height: 100vh;
+background: rgb(0, 0, 33);
+color: white;
+display: flex;
+flex-direction: column;
+}  
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(18, 18, 62);
+  }
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+  nav ul li {
+    list-style: none;
+    margin: 0 23px;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  nav ul li a:hover {
+    color: rgb(153, 153, 226);
+    font-size: 1.01rem;
+  }
+  .left {
+    font-size: 1.5rem;
+  }
+  .heading{
+    color: aqua;
+    font-size: 3em;
+    text-align: center;
+    margin-top: 20px;
+    
+  }
+.desc{
+  font-size: 1.5em;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: justify;
+}
+.img{
+  height: 3%;
+  width: 26%;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  margin-left: 5.5%;
+ border-radius: 50px;
+ box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+ -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+ transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.img::after{
+  height: 3%;
+  width: 26%;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  margin-left: 5.5%;
+ border-radius: 5px;
+ box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+ opacity: 0;
+ -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+ transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.img:hover{
+  -webkit-transform: scale(1.1, 1.1);
+transform: scale(1.1, 1.1);
+box-shadow: 0 20px 20px rgba(237, 52, 95, 0.737);
+}
+.pimg1{
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+}
+.pimg2{
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  margin-bottom: 50px;
+}
+footer {
+    background-color: #0b0a0b;
+    margin-top: auto;
+  }
+  .footer {
+    display: flex;
+    margin-top: 50px;
+    padding: 40px 122px;
+    justify-content: space-evenly;
+  }
+  .footer ul {
+    list-style: none;
+    
+  }
+  .footer ul a{
+    text-decoration: none;
+    color: white;
+  }
+  .footer > div {
+    width: 223px;
+  }
+  footer .footer-rights {
+    text-align: center;
+    color: gray;
+    padding: 12px 0;
+  }
+  .image-bottom {
+    width: 40px;
+    display: inline-flex;
+    margin-left: 1%;
+    border-radius: 6px;
+  }
+  .image-bottom1{
+    margin-left: 43%;
+    width: 40px;
+    display: inline-flex;
+   
+  }
+  @media screen and (min-width: 320px) and (max-width:480px){
+    nav{
+     font-size: 2.3rem;
+    }
+    .footer{
+     font-size: 2.3rem;
+     margin-top: 600px;
+   }
+   .heading{
+    margin-top: 10%;
+   }
+   }
+</style>
+  </head>
+  <body>
+    <header>
+    <nav>
+      <div class="left">Projects</div>
+      <div class="right">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="section-portfolio" id="portfolio-section">
+      <div class="container">
+        <h2 class="heading">Latest Work</h2>
+        <p class="desc">In my recent projects, I have successfully applied my skills in Java, HTML, CSS, Python, and Android development, delivering impactful and functional solutions.I have actively utilized my expertise in Java, HTML, CSS, Python, and Android development in my recent projects, resulting in successful and innovative outcomes.<div class="pimg1">
+        <div class="img">
+        <a href="#"><img src="images/netflix.jpeg" alt=""></a>
+      </div>
+      <div class="img">
+        <a href="#"><img src="images/todolist.jpeg" alt=""></a>
+      </div>
+        <div class="img">
+        <a href="#"><img src="images/facerecognition.jpeg" alt=""></a>
+      </div>
+       </div>
+       <div class="pimg2">
+        <div class="img">
+        <a href="#"><img src="images/calculator.jpeg" alt=""></a>
+      </div>
+        <div class="img">
+        <a href="#"><img src="images/tttgame.png" alt=""></a>
+        </div>
+        <div class="img">
+        <a href="#"><img src="images/charcount.png" alt=""></a>
+      </div>  
+    </div> 
+      </div>
+    </section>
+  </main>
+<footer>
+    <div class="footer">
+      <div class="footer-first">
+        <h3>Niraj's Developer Portfolio</h3>
+      </div>
+      <div class="footer-second">
+        <ul>
+            <a href="about.html"><li>About</li></a>
+        </ul>
+      </div>
+
+      <div class="footer-third">
+        <ul>
+            <a href="services.html"><li>Services</li></a>
+        </ul>
+      </div>
+      <div class="footer-fourth">
+        <ul>
+            <a href="contact.html"><li>Contact</li></a> 
+        </ul>
+      </div>
+
+      <div class="footer-fifth">
+        <ul>
+             <a href="index.html"><li>Home</li></a>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <a href="mailto:raulniraj300@gmail.com"
+        ><img class="image-bottom1" src="images/gmail.png" alt=""
+      /></a>
+      <a href="https://github.com/raulniraj"
+        ><img class="image-bottom" src="images/github.jpg" alt=""
+      /></a>
+      <a href="https://wa.me/9561780676"
+        ><img class="image-bottom" src="images/whatsapp.png" alt=""
+      /></a>
+      <a href="www.linkedin.com/in/nirajraul"
+        ><img class="image-bottom" src="images/linkedin.png" alt=""
+      /></a>
+    </div>
+    <div class="footer-rights">
+      Copyright &#169; www.nirajsportfolio.com | All rights reserved
+    </div>
+  </footer>
+  
+  </body>
+</html>
